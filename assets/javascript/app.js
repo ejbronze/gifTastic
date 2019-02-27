@@ -4,8 +4,8 @@ var topics = [
   "Spongebob",
   "Homer Simpson",
   "Seriously?",
-  "Scooby-Doo",
-  "Adventure Time"
+  "Bye",
+  "Eye Roll"
 ];
 
 var button;
@@ -18,7 +18,7 @@ var buttonGenerator = function() {
   // loops through the array and creates buttons
   for (i = 0; i < topics.length; i++) {
     button = $("<button type=" + "button" + ">" + topics[i] + "</button>")
-      .addClass("btn btn-warning")
+      .addClass("btn btn-outline-primary")
       .attr("data", topics[i]);
     $("#buttonArea").append(button);
   }
